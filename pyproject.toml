@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harmony-py"
+version = "0.4.0"
+description = "discord.py 風の Harmony (har.mony.lol) Bot ライブラリ (非公式)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "aiohttp>=3.9",
+    "websockets>=12",
+]
+
+[tool.setuptools.packages.find]
+include = ["harmony*"]
